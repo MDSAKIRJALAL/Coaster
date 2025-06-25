@@ -411,7 +411,7 @@ function openBirthdayCoasterOrder() {
       total += item.price * item.quantity;
     });
     msg += `%0ATotal: ₹${total}`;
-    window.open(`https://wa.me/9176328 96742?text=${msg}`, '_blank');
+    window.open(`https://wa.me/917632896742?text=${msg}`, '_blank');
     togglePopup('cartPopup');
     cart.length = 0;
   }
@@ -424,7 +424,7 @@ function openBirthdayCoasterOrder() {
 
     const p = currentSingleProduct;
     let msg = `*A Z Creations*%0A*Single Product Order*%0AName: ${name}%0AAddress: ${address}%0APhone: ${phone}%0A%0AProduct: ${p.product} x${p.quantity}%0APrice: ₹${p.price * p.quantity}`;
-    window.open(`https://wa.me/9176328 96742?text=${msg}`, '_blank');
+    window.open(`https://wa.me/917632896742?text=${msg}`, '_blank');
     togglePopup('singleOrderPopup');
   }
 
