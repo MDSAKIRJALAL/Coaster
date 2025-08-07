@@ -158,15 +158,15 @@
   <div class="product">
     <img src="Initial Coaster.jpg" alt="Product">
     <h3>Rose Coaster</h3>
-    <p>₹300</p>
+    <p>₹400</p>
     QTY:<input type="number" id="qtyA" value="1" min="1" style="width: 25px;">
-    <button class="btn" onclick="addToCart('Rose Coaster', 300, parseInt(document.getElementById('qtyA').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Rose Coaster', 300, parseInt(document.getElementById('qtyA').value))">Order</button>
+    <button class="btn" onclick="addToCart('Rose Coaster', 400, parseInt(document.getElementById('qtyA').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Rose Coaster', 400, parseInt(document.getElementById('qtyA').value))">Order</button>
   </div>
   <div class="product">
   <img src="Love Coaster.jpg" alt="Product">
   <h3 id="loveCoasterName">Love Coaster</h3>
-  <p>₹350</p>
+  <p>₹450</p>
   QTY:<input type="number" id="qtyB" value="1" min="1" style="width: 25px;">
   <input type="text" id="loveWordInput" placeholder="Enter small message" maxlength="50" style="width: 200px;">
   <center><p>Also Send 1 pic to attach with it. After Order.</p></center>
@@ -177,7 +177,7 @@
 <div class="product">
   <img src="Happy Birthday Coaster.jpg" alt="Product">
   <h3 id="birthdayCoasterName">Happy Birthday Coaster</h3>
-  <p>₹350</p>
+  <p>₹450</p>
   QTY:<input type="number" id="qtyC" value="1" min="1" style="width: 25px;">
   <input type="text" id="birthdayWordInput" placeholder="Enter name" maxlength="20" style="width: 80px;">
   <center><p>Also Send 1 pic to attach with it. After Order.</p></center>
@@ -187,15 +187,15 @@
   <div class="product">
     <img src="Baby photo Coaster.jpg" alt="Product">
     <h3>Baby photo Coaster</h3>
-    <p>₹300</p>
+    <p>₹400</p>
     QTY:<input type="number" id="qtyD" value="1" min="1" style="width: 25px;">
-    <button class="btn" onclick="addToCart('Baby photo Coaster', 300, parseInt(document.getElementById('qtyD').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Baby photo Coaster', 300, parseInt(document.getElementById('qtyD').value))">Order</button>
+    <button class="btn" onclick="addToCart('Baby photo Coaster', 400, parseInt(document.getElementById('qtyD').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Baby photo Coaster', 400, parseInt(document.getElementById('qtyD').value))">Order</button>
   </div>
   <div class="product">
     <img src="Name Hexagon Coaster.jpg" alt="Product">
     <h3 id="productNameE">Name Hexagon Coaster</h3>
-    <p>₹300</p>
+    <p>₹400</p>
     QTY:<input type="number" id="qtyE" value="1" min="1" style="width: 25px;">
     <input type="text" id="wordInputE" placeholder="Enter name" maxlength="20" style="width: 80px;">
     <button class="btn" onclick="addWordNamedProductToCartE()">Add to Cart</button>
@@ -205,11 +205,11 @@
  <div class="product">
     <img src="Photo Coaster.jpg" alt="Product">
     <h3>Photo Coaster</h3>
-    <p>₹350</p>
+    <p>₹450</p>
     QTY:<input type="number" id="qtyF" value="1" min="1" style="width: 25px;">
     <center><p>Also Send 1 pic to attach with it. After Order.</p></center>
-    <button class="btn" onclick="addToCart('Photo Coaster', 350, parseInt(document.getElementById('qtyF').value))">Add to Cart</button>
-    <button class="btn" onclick="openSingleOrderForm('Photo Coaster', 350, parseInt(document.getElementById('qtyF').value))">Order</button>
+    <button class="btn" onclick="addToCart('Photo Coaster', 450, parseInt(document.getElementById('qtyF').value))">Add to Cart</button>
+    <button class="btn" onclick="openSingleOrderForm('Photo Coaster', 450, parseInt(document.getElementById('qtyF').value))">Order</button>
   </div>
 
 </section>
@@ -271,7 +271,7 @@
   const customName = `${baseName} (${word})`;
   document.getElementById('loveCoasterName').textContent = customName;
 
-  cart.push({ product: customName, price: 350, quantity: qty });
+  cart.push({ product: customName, price: 450, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -287,7 +287,7 @@ function openLoveCoasterOrder() {
   }
 
   const customName = `${baseName} (${word})`;
-  currentSingleProduct = { product: customName, price: 350, quantity: qty };
+  currentSingleProduct = { product: customName, price: 450, quantity: qty };
   togglePopup('singleOrderPopup');
 }
 
@@ -304,7 +304,7 @@ function addBirthdayCoasterToCart() {
   const customName = `${baseName} (${word})`;
   document.getElementById('birthdayCoasterName').textContent = customName;
 
-  cart.push({ product: customName, price: 350, quantity: qty });
+  cart.push({ product: customName, price: 450, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -320,7 +320,7 @@ function openBirthdayCoasterOrder() {
   }
 
   const customName = `${baseName} (${word})`;
-  currentSingleProduct = { product: customName, price: 350, quantity: qty };
+  currentSingleProduct = { product: customName, price: 450, quantity: qty };
   togglePopup('singleOrderPopup');
 }
  function addWordNamedProductToCartE() {
@@ -336,7 +336,7 @@ function openBirthdayCoasterOrder() {
 
     const customName = `${baseName} (${word})`;
     document.getElementById('productNameE').textContent = customName;
-    cart.push({ product: customName, price: 300, quantity: qty });
+    cart.push({ product: customName, price: 400, quantity: qty });
     updateCart();
     alert(`${customName} x${qty} added to cart!`);
   }
@@ -353,7 +353,7 @@ function openBirthdayCoasterOrder() {
 
 
     const customName = `${baseName} (${word})`;
-    currentSingleProduct = { product: customName, price: 300, quantity: qty };
+    currentSingleProduct = { product: customName, price: 400, quantity: qty };
     togglePopup('singleOrderPopup');
   }
   const cart = [];
